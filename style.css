@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.line0{
+    height:8px;
+    width:28px;
+    background-color: black;
+    margin:3px 3px;
+}
+.burger{
+       display:none;
+       position: absolute;
+       top:28px;
+       left:15px;
+       cursor:pointer;
+}
+.logo img {
+    height: 50px;
+    width: 70px;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+.navbar {
+    display: flex;
+    height: 90px;
+    background-color: whitesmoke;
+    width: 100%;
+    align-items: center;
+    z-index:1;
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.searchbar{
+  width:30%;
+  text-align:right;
+  padding:0px 30px;
+}
+#search {
+    height: 25px;
+    width: 150px;
+    padding: 10px;
+}
+#btn {
+    height: 25px;
+    width: 80px;
+    margin: 10px;
+    cursor: pointer;
+}
+#btn:hover,#btn1:hover{
+    background-color: bisque;
+}
+.logo h3 {
+    margin: 8px;
+    font-size: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+   display:flex;
+   margin-left:60px;
+   flex-wrap:wrap;
+   flex-direction: row;
+   width:45%;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin: 4px;
+    padding: 8px;
+   
+}
+.navbar ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: red;
+}
+.navbar ul li:hover{
+    background-color: wheat;
+    transition: 0.3s;
+}
+.burger{
+    display:none;
+}
+
+#Home {
+    height: 480px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+#Home::before{
+    content: "";
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0.5;
+    z-index:-1;
+}
+#Home h1{
+    padding:15px;
+    font-size:30px;
+    height:30px;
+    text-align:center;
+}
+#Home p{
+    font-size:20px;
+    text-align:center;
+    padding:20px;
+}
+#btn1{
+    margin:10px;
+    font-size:15px;
+    cursor:pointer;
+    background-color: cyan;
+    width:100px;
+    height:40px;
+    border:1px solid red;
+    border-radius:8px;
+}
+#Services {
+    background-color: powderblue;
+    padding: 60px;
+}
+#container {
+    display: flex;
+    flex-wrap:wrap;
+    margin: 40px 0px;
+    justify-content: center;
+}
+#Services h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+}
+.box img {
+    height: 90px;
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+.box {
+    height: 400px;
+    width: 380px;
+    margin: 12px;
+    border: 2px solid red;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: darkgray;
+    text-align:center;
+    cursor:pointer;
+}
+.box h3 {
+    text-align: center;
+    margin: 18px;
+    font-size: 25px;
+}
+
+#Clients {
+    height:auto;
+    padding: 60px;
+    position:relative;
+}
+#Clients::before{
+    content:"";
+    background-image:url("bg5.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    opacity:0.16;
+    z-index:-1;
+}
+#contain {
+    display: flex;
+    flex-wrap:wrap;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.box1 img {
+    height: 100px;
+    width: 110px;
+}
+#Clients h1 {
+    text-align:center;
+    font-size: 30px;
+    line-height: 40px;
+}
+.box1 {
+    height: 85px;
+    width: 85px;
+    margin: 35px;
+    padding: 6px;
+   
+}
+#Contact {
+    height: auto;
+    padding: 60px;
+    position: relative;
+}
+#Contact::before{
+    content:"";
+    background-image:url("bg3.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    opacity:0.8;
+    z-index:-1;
+}
+#Contact h1 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+}
+form {
+    margin: 8px auto;
+    max-width:550px;
+}
+.line {
+    width: 90%;
+    height: 20px;
+    margin: 5px;
+    padding: 6px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 15px;
+}
+#review {
+    margin: 5px;
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 15px;
+}
+#Services .box:hover{
+    background-color:lightgray;
+}
+@media screen and (max-width: 1020px){
+    .navbar{
+        flex-direction:column;
+        padding-top:20px;
+        height:350px;
+    }
+   .navbar ul{
+       flex-direction: column;
+       text-align:center;
+       margin:15px 0px;
+       
+   }
+   .logo img{
+        margin:0px 0px;
+   }
+   .searchbar{
+       text-align:center;
+    }
+   #search{
+       width:100%;
+   }
+   .burger{
+       display:block;
+   }
+   .v-class-resp{
+       opacity:0;
+   }
+   .h-nav-resp{
+       height:70px;
+   }
+}
